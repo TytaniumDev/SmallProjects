@@ -1,0 +1,6 @@
+Tyler Holland's solution to the Riot Games Coding Challenge.
+*NOTE: In the achievment descriptions, most of them were described as earned if there were "more than xx things". For example, Veteran says "a user receives this for playing more than 1000 games in their lifetime." I interpreted that as being a greater than and not a greater than or equal to relationship. So in my implementation 1001 games will earn the achievement but 1000 games will not. If this is not the intended behavior, it is extremely easy to change.
+
+Driver: GameDriver.java located in the com.riotgames.codingchallenge.game package. Simply run as a Java Application and the results will be printed to System.out.
+
+JUnit 4 Tests: All unit tests are divided up by package in the /test directory.

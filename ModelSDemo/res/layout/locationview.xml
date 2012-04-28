@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+   xmlns:android="http://schemas.android.com/apk/res/android"
+   android:orientation="vertical"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent">
+
+   <TableLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/tableLayout1"
+      android:layout_alignParentTop="true"
+      android:layout_alignParentLeft="true">
+      <TableRow
+         android:id="@+id/tableRow1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content">
+         <ImageButton
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:scaleType="center"
+            android:src="@drawable/location"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/centerButton"></ImageButton>
+         <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/carLocation"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/centerButton"
+            android:id="@+id/centerCarButton"></Button>
+         <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/mapToggleButton"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/centerCarButton"
+            android:text="@string/mapToggle"></Button>
+      </TableRow>
+   </TableLayout>
+   <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="130"
+      android:textAppearance="?android:attr/textAppearanceMedium"
+      android:layout_alignParentTop="true"
+      android:layout_alignParentRight="true"
+      android:id="@+id/locationMPHText"></TextView>
+   <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textAppearance="?android:attr/textAppearanceSmall"
+      android:id="@+id/textView2"
+      android:layout_below="@+id/locationMPHText"
+      android:layout_alignParentRight="true"
+      android:text="@string/mph"></TextView>
+   <FrameLayout
+      android:layout_height="wrap_content"
+      android:id="@+id/frameLayout1"
+      android:layout_below="@+id/tableLayout1"
+      android:layout_alignParentBottom="true"
+      android:layout_marginBottom="64dip"
+      android:layout_width="fill_parent">
+      <com.google.android.maps.MapView
+         android:id="@+id/mapview"
+         android:layout_width="fill_parent"
+         android:layout_height="fill_parent"
+         android:clickable="true"
+         android:apiKey="01FxJ0C4hQpyoT0idqGQWZ9FN_jVhz-iCceyPXw" />
+   </FrameLayout>
+
+</RelativeLayout>

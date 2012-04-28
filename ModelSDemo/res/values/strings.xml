@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Model S Demo</string>
+    <string name="charge_tab">Charge</string>
+    <string name="location_tab">Location</string>
+    <string name="climate_tab">Climate</string>
+    <string name="climate_on">Climate On</string>
+    <string name="climate_off">Climate Off</string>
+    <string name="accounts_tab">Accounts</string>
+    <string name="charge">Charge</string>
+    <string name="mph">MPH</string>
+    <string name="mapToggle">Map/Satellite</string>
+    <string name="carLocation">Car</string>
+</resources>
